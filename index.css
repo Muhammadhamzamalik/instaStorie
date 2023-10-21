@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgb(57, 196, 201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    background-color: azure;
+    border-radius: 10px;
+    border: 1.5px solid orangered;
+}
+.storiyan{
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 10px;
+    /* background-color: rgb(68, 58, 58); */
+    border-bottom: 1px solid rgb(68, 58, 58);
+}
+.storiyan::-webkit-scrollbar{
+    display: none;
+}
+.storey i{
+    position: absolute;
+    font-size: 75px;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transition: all ease 0.7s;
+    transform: translate(-50%, -50%) scale(0);
+    /* color: ; */
+  }
+.storey{
+    border: 2px solid red;
+    /* background-color: aquamarine; */
+    width: 90px;
+    height:90px;
+    display: inline-block;
+    /* margin: 5px; */
+    overflow: hidden;
+    border-radius: 50%;   
+}
+.storey img{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    object-position: center;
+}
+.full-screen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    /* background: red; */
+    background-size: cover;
+}
